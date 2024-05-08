@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ARG: Bölüm 9</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Bölüm 9</h1>
+    <p>Sekizinci bölümü geçtin. Finale kadar gide bilecekmisin?</p>
+    <p>Soru: Sadece bir tek kibritiniz var, içinde bir gaz lambası, bir gaz sobası, ve bir de mum bulunan karanlık ve soğuk bir odaya girdiniz… Önce hangisini yakarsınız?</p>
+    <form action="Part10.html" method="post" id="form2">
+        <label for="password">Cevabi yazin:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Next Episode">
+    </form>
+    <footer>
+        <p>Created by IMAGINE.</p>
+        <p>Copyright © 2024 IMAGINE. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("form2").onsubmit = function() {
+            var password = document.getElementById("password").value;
+            if (password === "KİBRİT") {
+                window.location.href = "https://www.akjaeah.github.io/f-q-6";
+                return true;
+            } else {
+                alert("Yanliş kod. Bence daha iyi düşünmelisin");
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
